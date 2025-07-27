@@ -4,8 +4,7 @@ require('dotenv').config();
 
 const app = express();
 
-// ✅ CORS FIX HERE
-const cors = require('cors');
+
 app.use(cors({
   origin: ['http://localhost:5173', 'https://tascotracker.netlify.app'], // ✅ include Netlify domain
   credentials: true, // only if you use cookies/auth headers
